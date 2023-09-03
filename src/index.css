@@ -53,6 +53,8 @@ li {
 }
 
 select {
+  padding: 20px 70px 20px 20px;
+  width: 100%;
   background: none;
 }
 
@@ -61,7 +63,6 @@ select {
   font-weight: 600;
   background: white;
   border: 1px solid lightgray;
-  padding: 20px 70px 20px 20px;
   width: 100%;
 }
 

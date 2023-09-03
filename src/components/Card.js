@@ -67,7 +67,7 @@ export default function Card({ options }) {
                 : count.toString().slice(0, 3)
               : options.unit === "шт."
               ? options.values[selectParametr]
-              : options.values[selectParametr].toString().length === 8
+              : options.values[selectParametr].toString().length <= 8
               ? options.values[selectParametr].toString().slice(0, 2)
               : options.values[selectParametr].toString().slice(0, 3)}
           </text>
