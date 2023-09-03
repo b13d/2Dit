@@ -3,14 +3,6 @@ import Card from "./Card";
 import apiCards from "../api/apiCards.json";
 
 export default function TableSales() {
-  let option = {
-    countries: ["Россия", "Узбекистан", "Казахстан"],
-    values: [335, 500, 1000],
-    unit: "шт.",
-  };
-
-  console.log(apiCards);
-
   return (
     <section>
       <h1 className="text-[#262424] text-[32px] font-semibold">Продажи</h1>
