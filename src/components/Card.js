@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 
@@ -60,13 +60,15 @@ export default function Card({ options }) {
             );
           })}
 
-          <text x={19} y={27} className="text-[6px] font-bold text-[black]">
+          <text x={20} y={27} className="text-[6px] font-bold text-[black]">
             {selectParametr === undefined
               ? options.unit === "шт."
                 ? count
                 : count.toString().slice(0, 3)
               : options.unit === "шт."
               ? options.values[selectParametr]
+              : options.values[selectParametr].toString().length === 8
+              ? options.values[selectParametr].toString().slice(0, 2)
               : options.values[selectParametr].toString().slice(0, 3)}
           </text>
           <text x={21} y={31} className="text-[4px] text-[black]">
