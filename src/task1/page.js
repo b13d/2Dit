@@ -14,12 +14,11 @@ export function Task1() {
     newArr.push(
       <div key={index} class="select">
         <select>
-          <option value={`${value}`}>
-            {value}
-          </option>
+          <option value={`${value}`}>{value}</option>
         </select>
       </div>
     );
+    return true;
   });
 
   return (
